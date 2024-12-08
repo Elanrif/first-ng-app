@@ -8,8 +8,8 @@ import { HeaderComponent } from './component/header/header.component';
   standalone: true,
   imports: [RouterOutlet, HomeComponent, HeaderComponent],
   template: `
-    <not-me />
-    <app-home />
+   <app-header />
+   <app-home />
   `,
   styles: [],
 })
