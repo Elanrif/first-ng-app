@@ -8,7 +8,6 @@ import { TodoService } from '../../services/todo.service';
   imports: [RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
-  providers: [TodoService]
 })
 export class HeaderComponent {
    title = 'My Angular Application'
