@@ -5,16 +5,16 @@ import { Component, signal } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './counter.component.html',
-  styleUrl: './counter.component.scss'
+  styleUrl: './counter.component.scss',
 })
 export class CounterComponent {
   countervalue = signal(0);
   increment() {
-    this.countervalue.set(this.countervalue() + 1);
+    this.countervalue.update((val) => val + 1);
   }
 
   decrement() {
-    this.countervalue.set(this.countervalue() - 1);
+    this.countervalue.update((val) => val - 1);
   }
 
   reset() {
