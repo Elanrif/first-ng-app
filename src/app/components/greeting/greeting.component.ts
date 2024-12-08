@@ -1,4 +1,5 @@
 import { Component, input } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-greeting',
