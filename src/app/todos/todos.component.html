@@ -5,6 +5,6 @@
 }
 <ul class="todos">
 @for (todo of todoItems(); track todo.id) {
-    <app-todo-item [todo]="todo"/>
+    <app-todo-item (todoToggled)="updatedTodoItem($event)" [todo]="todo"/>
 }
 </ul>
